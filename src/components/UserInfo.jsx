@@ -68,7 +68,7 @@ function UserInfo() {
             className="imgActivity"
           />
         </a>
-        <p>Organization: {user.company} </p>
+        {user.company && <p>Organization: {user.company} </p>}
         <a
           href={`https://github.com/${login}?tab=followers`}
           target="_blank"
