@@ -1,4 +1,3 @@
-import '../reset.css';
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
@@ -63,7 +62,7 @@ function UserInfo() {
             className="imgActivity"
           />
         </a>
-        <p>{user.company} </p>
+        <p>Organization: {user.company} </p>
         <a
           href={`https://github.com/${login}?tab=followers`}
           target="_blank"
@@ -78,7 +77,17 @@ function UserInfo() {
         >
           <p>Following: {user.following} </p>
         </a>
+        <a
+          href={`https://github.com/${login}?tab=public_gists`}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <p> Gists: {user.public_gists} </p>
+        </a>
         <p>Created at: {user.created_at} </p>
+        {user.hireable && <p>Hireable </p>}
+
+        <p> Biography: {user.bio} </p>
       </div>
     </StyledUserInfo>
   );
