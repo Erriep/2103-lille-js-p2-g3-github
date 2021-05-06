@@ -46,8 +46,14 @@ function UserInfo() {
 
   return (
     <StyledUserInfo>
-      <img className="userAvatar" srcSet={user.avatar_url} alt="Avatar" />
-
+      <a
+        href={`https://github.com/${login}`}
+        target="_blank"
+        rel="noreferrer"
+        className="nameAndActivity"
+      >
+        <img className="userAvatar" srcSet={user.avatar_url} alt="Avatar" />
+      </a>
       <div className="userDetail">
         <a
           href={`https://github.com/${login}`}
@@ -62,7 +68,7 @@ function UserInfo() {
             className="imgActivity"
           />
         </a>
-        <p>Organization: {user.company} </p>
+        {user.company && <p>Organization: {user.company} </p>}
         <a
           href={`https://github.com/${login}?tab=followers`}
           target="_blank"
@@ -78,7 +84,7 @@ function UserInfo() {
           <p>Following: {user.following} </p>
         </a>
         <a
-          href={`https://github.com/${login}?tab=public_gists`}
+          href={`https://gist.github.com/${login}`}
           target="_blank"
           rel="noreferrer"
         >
@@ -87,7 +93,7 @@ function UserInfo() {
         <p>Created at: {user.created_at} </p>
         {user.hireable && <p>Hireable </p>}
 
-        <p> Biography: {user.bio} </p>
+        {user.bio && <p> Biography: {user.bio} </p>}
       </div>
     </StyledUserInfo>
   );
