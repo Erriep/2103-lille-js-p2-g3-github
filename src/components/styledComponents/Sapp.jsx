@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const StyledApp = styled.div`
-  background-color: #f5f7f7;
+  background-color: rgb(204, 220, 223);
   font-family: 'Helvetica', 'Arial', sans-serif;
   color: #555;
   h2,
