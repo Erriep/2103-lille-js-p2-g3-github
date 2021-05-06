@@ -28,7 +28,7 @@ const StyledEvent = styled.div`
     height: 100%;
     margin-top: 5px;
     border: 1px solid black;
-    background-color: rgb(204, 220, 223);
+    background-color: #f5f7f7;
     text-align: center;
   }
 

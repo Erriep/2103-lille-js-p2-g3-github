@@ -23,7 +23,7 @@ const StyledUserRepo = styled.div`
   }
 
   .carde {
-    background-color: rgb(204, 220, 223);
+    background-color: #f5f7f7;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

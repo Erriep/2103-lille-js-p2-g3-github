@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const StyledUserInfo = styled.div`
-  background-color: rgb(204, 220, 223);
+  background-color: #f5f7f7;
   border-radius: 5px;
   display: flex;
   margin-top: 20px;
