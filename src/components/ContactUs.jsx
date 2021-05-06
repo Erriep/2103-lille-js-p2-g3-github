@@ -31,9 +31,7 @@ function ContactUs() {
         </label>
         <p className="form textArea">How do we get better?</p>
         <label htmlFor="message" className="form">
-          <textarea id="message" placeholder="Your message here">
-            :)
-          </textarea>
+          <textarea id="message" placeholder="Your message here" />
         </label>
         <br />
         <a href="/">

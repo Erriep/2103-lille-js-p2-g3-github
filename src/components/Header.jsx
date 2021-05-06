@@ -13,9 +13,11 @@ function Header() {
   };
 
   useEffect(() => {
-    axios.get(`https://api.github.com/users/${query}`).then(({ data }) => {
-      setUser(data);
-    });
+    if (query) {
+      axios.get(`https://api.github.com/users/${query}`).then(({ data }) => {
+        setUser(data);
+      });
+    }
   }, [query]);
 
   return (
