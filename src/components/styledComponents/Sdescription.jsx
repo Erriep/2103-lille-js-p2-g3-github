@@ -8,8 +8,8 @@ const StyledDesription = styled.div`
   .Description {
     background-color: #0e6476;
     width: 60%;
-    margin-top: 20vh;
-    margin-bottom: 25vh;
+    margin-top: 190px;
+    margin-bottom: 150px;
     padding: 20px;
     text-align: justify;
     box-shadow: 4px 3px 4px 5px rgba(0, 0, 0, 0.1);

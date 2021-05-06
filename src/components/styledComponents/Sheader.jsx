@@ -3,11 +3,11 @@ import styled from 'styled-components';
 const StyledHeader = styled.div`
   display: flex;
   background-color: #0e6476;
-  height: 30vh;
+  height: 195px;
 
   .title h1 {
     font-size: 3.5em;
-    margin-top: 32%;
+    margin-top: 90px;
     font-weight: 900;
     color: #f5f7f7;
   }
@@ -18,34 +18,36 @@ const StyledHeader = styled.div`
   }
 
   .logo {
-    margin-top: 8vh;
+    margin-top: 55px;
     margin-left: 15vw;
     width: 140px;
     height: 120px;
     margin-left: 5vw;
-    margin-right: 5vw;
+    margin-right: 2vw;
   }
 
   .search {
-    margin: 10%;
     display: block;
+    margin-top: 100px;
+  }
 
-    .searchBar {
-      border-radius: 10px;
-      font-size: large;
-      padding: 10px;
-      width: 20vw;
-      margin-left: 10vw;
-    }
+  .searchBar {
+    border-radius: 10px;
+    font-size: large;
+    padding: 10px;
+    width: 20vw;
+    margin-left: 25vw;
   }
 
   .miniUser {
     display: flex;
+    position: relative;
     width: 22vw;
     background-color: rgb(204, 220, 223);
     border: 1px solid #000;
     margin-top: 10px;
-    margin-left: 10vw;
+    margin-left: 25vw;
+    text-decoration: none;
 
     img {
       width: 45%;
@@ -70,6 +72,8 @@ const StyledHeader = styled.div`
   }
 
   @media (max-width: 700px) {
+    height: 160px;
+
     .title h1 {
       font-size: 2.5em;
     }
@@ -77,6 +81,8 @@ const StyledHeader = styled.div`
     .searchBar {
       font-size: smaller;
       margin-right: 15px;
+      margin-top: 90px;
+      margin-left: 10vw;
     }
 
     .search {
@@ -84,11 +90,10 @@ const StyledHeader = styled.div`
       width: 50px;
       height: 10px;
       margin: 1%;
-      margin-top: 13vh;
     }
 
     .logo {
-      margin-top: 50px;
+      margin-top: 65px;
       width: 100px;
       height: 80px;
     }
