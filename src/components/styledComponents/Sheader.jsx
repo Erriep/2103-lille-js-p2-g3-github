@@ -47,6 +47,7 @@ const StyledHeader = styled.div`
     border: 1px solid #000;
     margin-top: 10px;
     margin-left: 25vw;
+    text-decoration: none;
 
     img {
       width: 45%;
