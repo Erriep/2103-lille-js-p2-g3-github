@@ -41,7 +41,7 @@ function ContactUs() {
         </a>
       </form>
       <div className="address">
-        <p>GitStats</p>
+        <p>GitHub Stats.</p>
         <p>4 avenue des Saules, 59000 Lille</p>
         <br />
         <a href="mailto: p2g3.github@gmail.com">p2g3.github@gmail.com</a>

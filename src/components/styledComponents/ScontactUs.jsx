@@ -2,10 +2,10 @@ import styled from 'styled-components';
 
 const StyledContactUs = styled.div`
   display: flex;
-
   background-color: rgb(204, 220, 223);
   color: #333333;
   padding-bottom: 2rem;
+  margin-top: 180px;
 
   .select {
     margin-top: 0.5rem;
